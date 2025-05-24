@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formula 1 - Register</title>
+    <link rel="stylesheet" href="../CSS/f1-login.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="left-panel">
+        <img
+          src="https://www.formula1.com/etc/designs/fom-website/images/f1_logo.svg"
+          alt="Formula 1 Logo"
+          class="logo"
+        />
+        <div class="left-content">
+          <h1>Join The Race</h1>
+          <p>
+            Create your Formula 1 account to access exclusive content, manage
+            your preferences, and get personalized recommendations.
+          </p>
+        </div>
+      </div>
+      <div class="right-panel">
+        <div class="login-form">
+          <div class="form-header">
+            <h2>Create Account</h2>
+            <p>Enter your details to join the F1 community</p>
+          </div>
+          <form>
+            <div class="form-group">
+              <label for="first-name">First Name</label>
+              <input
+                type="text"
+                id="first-name"
+                placeholder="Enter your first name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name</label>
+              <input
+                type="text"
+                id="last-name"
+                placeholder="Enter your last name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                id="password"
+                placeholder="Create a password"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="confirm-password">Confirm Password</label>
+              <input
+                type="password"
+                id="confirm-password"
+                placeholder="Confirm your password"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="country">Country</label>
+              <select id="country" class="form-control">
+                <option value="">Select your country</option>
+                <option value="US">United States</option>
+                <option value="UK">United Kingdom</option>
+                <!-- More countries would be added here -->
+              </select>
+            </div>
+            <div class="terms-container remember-me">
+              <input type="checkbox" id="terms" />
+              <label for="terms"
+                >I agree to the
+                <a href="#" class="terms-link">Terms of Service</a> and
+                <a href="#" class="terms-link">Privacy Policy</a></label
+              >
+            </div>
+            <button type="submit" class="login-button">CREATE ACCOUNT</button>
+            <div class="divider">or</div>
+            <div class="social-login">
+              <button type="button" class="social-button">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1024px-Google_%22G%22_logo.svg.png"
+                  alt="GoogleGoogle"
+                />
+                Continue with Google
+              </button>
+              <button type="button" class="social-button">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
+                  alt="Facebook"
+                />
+                Continue with Facebook
+              </button>
+            </div>
+            <div class="signup-link">
+              Already have an account? <a href="/HTML/f1-login.html">Log in</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

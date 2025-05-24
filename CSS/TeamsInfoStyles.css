@@ -1,0 +1,357 @@
+
+/* Global Styles */
+:root {
+    --mclaren-orange: #FF8700;
+    --mclaren-blue: #0090D4;
+    --mclaren-dark: #000000;
+    --mclaren-light: #F7F4F1;
+    --white: #FFFFFF;
+    --black: #000000;
+    --gray: #6C6C6C;
+    --light-gray: #E6E6E6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', Arial, sans-serif;
+}
+
+body {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--mclaren-orange);
+    color: var(--white);
+    border: 2px solid var(--mclaren-orange);
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: var(--white);
+    border: 2px solid var(--white);
+}
+
+.btn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+
+
+.f1tv-btn {
+    border: 2px solid var(--mclaren-orange);
+    color: var(--white);
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+/* Hero Section */
+.hero2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('https://media.formula1.com/image/upload/f_auto,c_limit,w_1440,q_auto/f_auto,c_fill,q_auto,w_1320,t_16by9Centre,g_faces,ar_16:9/trackside-images/2025/Formula_1_Testing_in_Bahrain___Day_3/2202439875');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    margin-top: 70px;
+    color: var(--white);
+    text-align: left;
+    position: relative;
+}
+
+.hero2-content {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.hero2 h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+}
+
+.hero2 h1:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 60px;
+    height: 4px;
+    background-color: var(--mclaren-orange);
+}
+
+.hero2 p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+
+.hero2-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+/* Team Info Section */
+.team-info {
+    padding: 60px 0;
+    background-color: var(--mclaren-light);
+}
+
+.section-title {
+    text-align: left;
+    margin-bottom: 40px;
+    color: var(--black);
+    font-size: 32px;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 60px;
+    height: 4px;
+    background-color: var(--mclaren-orange);
+}
+
+.team-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.detail-card {
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.detail-card:hover {
+    transform: translateY(-5px);
+}
+
+.detail-card h3 {
+    color: var(--mclaren-orange);
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.detail-card p {
+    font-size: 16px;
+    color: var(--black);
+}
+
+/* Drivers Section */
+.drivers {
+    padding: 60px 0;
+    background-color: var(--white);
+}
+
+.drivers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.driver-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background-color: var(--black);
+    height: 500px;
+}
+
+.driver-card:hover {
+    transform: translateY(-10px);
+}
+
+.driver-image {
+    height: 400px;
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+
+#lando-image {
+    background-image: url('https://www.formula1.com/content/dam/fom-website/drivers/2024Drivers/norris.png.transform/2col-retina/image.png');
+    background-color: var(--mclaren-orange);
+}
+
+#oscar-image {
+    background-image: url('https://www.formula1.com/content/dam/fom-website/drivers/2024Drivers/piastri.png.transform/2col-retina/image.png');
+    background-color: var(--mclaren-blue);
+}
+
+.driver-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--black);
+    padding: 20px;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+.driver-number {
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--mclaren-orange);
+    margin-right: 15px;
+}
+
+.driver-name {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.driver-team {
+    display: none;
+}
+
+/* History Section */
+.history {
+    padding: 60px 0;
+    background-color: var(--mclaren-light);
+}
+
+.history-content {
+    max-width: 800px;
+    line-height: 1.6;
+}
+
+.history-content p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: var(--gray);
+}
+
+/* News Section */
+.news2 {
+    padding: 60px 0;
+    background-color: var(--white);
+}
+
+.news2-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.news2-card {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background-color: var(--white);
+}
+
+.news2-card:hover {
+    transform: translateY(-5px);
+}
+
+.news2-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+#news2-image-1 {
+    background-image: url('https://www.formula1.com/content/dam/fom-website/sutton/2024/Italy/Sunday/1565861353.jpg.transform/9col/image.jpg');
+}
+
+#news2-image-2 {
+    background-image: url('https://www.formula1.com/content/dam/fom-website/sutton/2024/Japan/Saturday/1561214566.jpg.transform/9col/image.jpg');
+}
+
+#news2-image-3 {
+    background-image: url('https://www.formula1.com/content/dam/fom-website/sutton/2024/Australia/Sunday/1537518677.jpg.transform/9col/image.jpg');
+}
+
+.news2-content {
+    padding: 20px;
+}
+
+.news2-date {
+    color: var(--mclaren-orange);
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.news2-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: var(--black);
+}
+
+.news2-excerpt {
+    font-size: 14px;
+    color: var(--gray);
+    margin-bottom: 15px;
+}
+
+.read-more {
+    color: var(--mclaren-orange);
+    font-weight: bold;
+    font-size: 14px;
+    position: relative;
+    padding-right: 20px;
+}
+
+.read-more:after {
+    content: '→';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease;
+}
+
+.read-more:hover:after {
+    transform: translate(5px, -50%);
+}
+

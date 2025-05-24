@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formula 1 - Login</title>
+    <link rel="stylesheet" href="../CSS/f1-login.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="left-panel">
+        <img
+          src="https://www.formula1.com/etc/designs/fom-website/images/f1_logo.svg"
+          alt="Formula 1 Logo"
+          class="logo"
+        />
+        <div class="left-content">
+          <h1>Welcome Back</h1>
+          <p>
+            Log in to your Formula 1 account to access exclusive content, manage
+            your preferences, and get personalized recommendations.
+          </p>
+        </div>
+      </div>
+      <div class="right-panel">
+        <div class="login-form">
+          <div class="form-header">
+            <h2>Log in</h2>
+            <p>Enter your details to access your account</p>
+          </div>
+          <form>
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                id="password"
+                placeholder="Enter your password"
+                required
+              />
+            </div>
+            <div class="remember-forgot">
+              <div class="remember-me">
+                <input type="checkbox" id="remember" />
+                <label for="remember">Remember me</label>
+              </div>
+              <div class="forgot-password">
+                <a href="#">Forgot password?</a>
+              </div>
+            </div>
+            <button type="submit" class="login-button">LOG IN</button>
+            <div class="divider">or</div>
+            <div class="social-login">
+              <button type="button" class="social-button">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1024px-Google_%22G%22_logo.svg.png"
+                  alt="GoogleGoogle"
+                />
+                Continue with Google
+              </button>
+              <button type="button" class="social-button">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
+                  alt="Facebook"
+                />
+                Continue with Facebook
+              </button>
+            </div>
+            <div class="signup-link">
+              Don't have an account?
+              <a href="/HTML/f1-register.html">Sign up</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

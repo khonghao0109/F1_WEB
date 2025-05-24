@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>F1 2025 Results</title>
+    <link rel="stylesheet" href="../CSS/results.css" />
+    <link rel="stylesheet" href="../CSS/styles.css" />
+    <script src="/Web_Formula1/JS/results.js" defer></script>
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="user-actions">
+            <a href="f1-login.html" class="login-btn">Sign In</a>
+            <a href="f1-register.html" class="signup-btn">Subscribe</a>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="main-nav">
+        <div class="logo">
+            <img src="https://www.formula1.com/etc/designs/fom-website/images/f1_logo.svg" alt="F1 Logo">
+        </div>
+        <div class="main-nav-links">
+            <a href="Home.html">Latest</a>
+            <a href="#">Video</a>
+            <a href="schedule.html">Schedule</a>
+            <a href="results.html">Results</a>
+            <a href="Drivers.html">Drivers</a>
+            <a href="Teams.html">Teams</a>
+            <a href="#">Gaming</a>
+            <a href="#">Live Timing</a>
+        </div>
+    </nav>
+
+    <main data-layout="page-layout" class="bg-white" id="maincontent">
+        <div class="f1-container container">
+            <div class="f1-inner-wrapper py-xs mobile:py-normal tablet:py-xl flex flex-col gap-normal">
+                <div class="f1-inner-wrapper flex flex-col gap-normal laptop:gap-micro">
+                    <div class="filter-row flex gap-normal">
+                        <div class="filter-section">
+                            <div class="filter-header">Season</div>
+                            <div class="filter-dropdown">
+                                <button class="dropdown-toggle" data-type="year">2025</button>
+                                <ul class="dropdown-menu">
+                                    <li class="f1-menu-item font-formulaOne uppercase cursor-pointer font-bold active" data-name="year" data-value="2025">
+                                        <a href="/en/results/2025/team">2025</a>
+                                    </li>
+                                    <li class="f1-menu-item font-formulaOne uppercase cursor-pointer" data-name="year" data-value="2024">
+                                        <a href="/en/results/2024/team">2024</a>
+                                    </li>
+                                    <li class="f1-menu-item font-formulaOne uppercase cursor-pointer" data-name="year" data-value="2023">
+                                        <a href="/en/results/2023/team">2023</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="filter-section">
+                            <div class="filter-header">Categories</div>
+                            <div class="filter-dropdown">
+                                <button class="dropdown-toggle" data-type="apiType">
+                    Teams
+                  </button>
+                                <ul class="dropdown-menu">
+                                    <li class="f1-menu-item font-formulaOne uppercase cursor-pointer" data-name="apiType" data-value="races">
+                                        <a href="/en/results/2025/races">Races</a>
+                                    </li>
+                                    <li class="f1-menu-item font-formulaOne uppercase cursor-pointer" data-name="apiType" data-value="drivers">
+                                        <a href="/en/results/2025/drivers">Drivers</a>
+                                    </li>
+                                    <li class="f1-menu-item font-formulaOne uppercase cursor-pointer font-bold active" data-name="apiType" data-value="team">
+                                        <a href="/en/results/2025/team">Teams</a>
+                                    </li>
+                                    <li class="f1-menu-item font-formulaOne uppercase cursor-pointer" data-name="apiType" data-value="fastest-lap">
+                                        <a href="/en/results/2025/fastest-lap">DHL Fastest Lap Award</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="filter-section">
+                <div class="filter-header">Results</div>
+                <div class="filter-dropdown">
+                  <button class="dropdown-toggle" data-type="filter">
+                    All
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li
+                      class="f1-menu-item font-formulaOne uppercase cursor-pointer font-bold active"
+                      data-filter="all"
+                    >
+                      <a href="/en/results/2025/team">All</a>
+                                    </li>
+                                    <li class="f1-menu-item font-formulaOne uppercase cursor-pointer" data-filter="McLaren-Mercedes">
+                                        <a href="/en/results/2025/team/McLaren-Mercedes">McLaren Mercedes</a
+                      >
+                    </li>
+                    <li
+                      class="f1-menu-item font-formulaOne uppercase cursor-pointer"
+                      data-filter="Mercedes"
+                    >
+                      <a href="/en/results/2025/team/Mercedes">Mercedes</a>
+                                    </li>
+                                    <li class="f1-menu-item font-formulaOne uppercase cursor-pointer" data-filter="Red-Bull-Racing-Honda-RBPT">
+                                        <a href="/en/results/2025/team/Red-Bull-Racing-Honda-RBPT">Red Bull Racing Honda RBPT</a
+                      >
+                    </li>
+                    <li
+                      class="f1-menu-item font-formulaOne uppercase cursor-pointer"
+                      data-filter="Ferrari"
+                    >
+                      <a href="/en/results/2025/team/Ferrari">Ferrari</a>
+                                    </li>
+                                    <li class="f1-menu-item font-formulaOne uppercase cursor-pointer" data-filter="Williams-Mercedes">
+                                        <a href="/en/results/2025/team/Williams-Mercedes">Williams Mercedes</a
+                      >
+                    </li>
+                    <li
+                      class="f1-menu-item font-formulaOne uppercase cursor-pointer"
+                      data-filter="Haas-Ferrari"
+                    >
+                      <a href="/en/results/2025/team/Haas-Ferrari"
+                        >Haas Ferrari</a
+                      >
+                    </li>
+                    <li
+                      class="f1-menu-item font-formulaOne uppercase cursor-pointer"
+                      data-filter="Aston-Martin-Aramco-Mercedes"
+                    >
+                      <a
+                        href="/en/results/2025/team/Aston-Martin-Aramco-Mercedes"
+                        >Aston Martin Aramco Mercedes</a
+                      >
+                    </li>
+                    <li
+                      class="f1-menu-item font-formulaOne uppercase cursor-pointer"
+                      data-filter="Racing-Bulls-Honda-RBPT"
+                    >
+                      <a href="/en/results/2025/team/Racing-Bulls-Honda-RBPT"
+                        >Racing Bulls Honda RBPT</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="bg-brand-white f1-utils-inner-padding">
+              <div class="f1-inner-wrapper flex flex-col gap-normal">
+                <div
+                  class="max-tablet:flex-col flex justify-between items-center gap-normal"
+                >
+                  <h1
+                    class="f1-heading tracking-normal text-fs-24px tablet:text-fs-42px leading-tight normal-case font-normal non-italic f1-heading__body font-formulaOne"
+                  >
+                    2025 Team Standings
+                  </h1>
+                </div>
+                <div class="overflow-x-auto max-tablet:-mx-normal">
+                  <table class="f1-table f1-table-with-data w-full">
+                    <thead
+                      class="border border-grey-20 border-t-0 border-l-0 border-r-0"
+                    >
+                      <tr class="bg-brand-white"></tr>
+                    </thead>
+                    <tbody></tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+        <!-- Footer -->
+        <footer>
+          <div class="footer-logo">
+              <img src="https://www.formula1.com/etc/designs/fom-website/images/f1_logo.svg" alt="F1 Logo">
+          </div>
+          <div class="footer-links">
+              <div class="footer-column">
+                  <h3>F1</h3>
+                  <a href="#">Latest</a>
+                                        <a href="#">Video</a>
+                                        <a href="#">Schedule</a>
+                                        <a href="#">Standings</a>
+                                        <a href="#">Drivers</a>
+                                        <a href="#">Teams</a>
+                            </div>
+                            <div class="footer-column">
+                                <h3>Gaming</h3>
+                                <a href="#">Esports</a>
+                                <a href="#">Fantasy</a>
+                                <a href="#">F1 2023 Game</a>
+                                <a href="#">F1 Mobile Racing</a>
+                            </div>
+                            <div class="footer-column">
+                                <h3>Live Timing</h3>
+                                <a href="#">F1 TV</a>
+                                <a href="#">Tickets</a>
+                                <a href="#">F1 Experiences</a>
+                                <a href="#">F1 Authentics</a>
+                            </div>
+                            <div class="footer-column">
+                                <h3>More</h3>
+                                <a href="#">Store</a>
+                                <a href="#">Careers</a>
+                                <a href="#">F1 Academy</a>
+                                <a href="#">Media Centre</a>
+                                <a href="#">Contact Us</a>
+                            </div>
+                        </div>
+
+                        <div class="footer-bottom">
+                            <div class="social-links">
+                                <a href="#" aria-label="Visit our Facebook page">
+                                    <i class="fab fa-facebook-f"></i>
+                                    <span class="sr-only">Facebook</span>
+                                </a>
+                                <a href="#" aria-label="Visit our Twitter page">
+                                    <i class="fab fa-twitter"></i>
+                                    <span class="sr-only">Twitter</span>
+                                </a>
+                                <a href="#" aria-label="Visit our Instagram page">
+                                    <i class="fab fa-instagram"></i>
+                                    <span class="sr-only">Instagram</span>
+                                </a>
+                                <a href="#" aria-label="Visit our YouTube channel">
+                                    <i class="fab fa-youtube"></i>
+                                    <span class="sr-only">YouTube</span>
+                                </a>
+                                <a href="#" aria-label="Visit our Twitch channel">
+                                    <i class="fab fa-twitch"></i>
+                                    <span class="sr-only">Twitch</span>
+                                </a>
+                            </div>
+                            <div class="copyright">
+                                © 2023 Formula One World Championship Limited
+                            </div>
+                        </div>
+                        </footer>
+
+                        <script src="/JS/results.js"></script>
+                        <script>
+                            (function() {
+                                function c() {
+                                    var b = a.contentDocument || a.contentWindow.document;
+                                    if (b) {
+                                        var d = b.createElement("script");
+                                        d.innerHTML =
+                                            "window.__CF$cv$params={r:'93751c632f9169e7',t:'MTc0NTgyODExNy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
+                                        b.getElementsByTagName("head")[0].appendChild(d);
+                                    }
+                                }
+                                if (document.body) {
+                                    var a = document.createElement("iframe");
+                                    a.height = 1;
+                                    a.width = 1;
+                                    a.style.position = "absolute";
+                                    a.style.top = 0;
+                                    a.style.left = 0;
+                                    a.style.border = "none";
+                                    a.style.visibility = "hidden";
+                                    document.body.appendChild(a);
+                                    if ("loading" !== document.readyState) c();
+                                    else if (window.addEventListener)
+                                        document.addEventListener("DOMContentLoaded", c);
+                                    else {
+                                        var e = document.onreadystatechange || function() {};
+                                        document.onreadystatechange = function(b) {
+                                            e(b);
+                                            "loading" !== document.readyState &&
+                                                ((document.onreadystatechange = e), c());
+                                        };
+                                    }
+                                }
+                            })();
+                        </script>
+</body>
+
+</html>

@@ -1,0 +1,405 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f8f8f8;
+    color: #2c2c2c;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Top Navigation */
+.top-nav {
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 8px 0;
+    font-size: 12px;
+}
+
+.top-nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left,
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-left a,
+.nav-right a {
+    margin-right: 15px;
+    font-weight: bold;
+    color: #666;
+}
+
+.nav-logo-fia {
+    background-color: #333;
+    color: white;
+    padding: 2px 8px;
+}
+
+.tv-link {
+    display: flex;
+    align-items: center;
+}
+
+.tv-link::before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-color: #e10600;
+    margin-right: 5px;
+}
+
+.sign-in-btn {
+    background-color: #333;
+    color: white !important;
+    padding: 5px 15px;
+    border-radius: 3px;
+}
+
+.subscribe-btn {
+    background-color: #e10600;
+    color: white !important;
+    padding: 5px 15px;
+    border-radius: 3px;
+}
+
+/* F1 Main Navigation */
+.f1-main-nav {
+    background-color: #e10600;
+    color: white;
+    padding: 12px 0;
+}
+
+.f1-main-nav .container {
+    display: flex;
+    align-items: center;
+}
+
+.f1-logo {
+    margin-right: 30px;
+}
+
+.main-menu {
+    display: flex;
+    align-items: center;
+}
+
+.main-menu a {
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    position: relative;
+}
+
+.dropdown::after {
+    content: "▼";
+    font-size: 8px;
+    margin-left: 5px;
+    position: relative;
+    top: -1px;
+}
+
+/* Hero Banner */
+.hero-banner {
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/api/placeholder/1200/400');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.banner-content h1 {
+    font-size: 42px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.banner-content h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.date-badge {
+    background-color: #000;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    display: inline-block;
+}
+
+/* Sub Navigation */
+.sub-nav {
+    background-color: #333;
+    color: white;
+    padding: 12px 0;
+    text-align: center;
+}
+
+.sub-nav .container {
+    display: flex;
+    justify-content: center;
+}
+
+.sub-nav a {
+    margin: 0 20px;
+    font-weight: bold;
+    font-size: 14px;
+    position: relative;
+    padding: 0 5px 8px;
+}
+
+.sub-nav a.active {
+    border-bottom: 3px solid #e10600;
+}
+
+/* Main Content */
+.main-content {
+    padding: 30px 0;
+}
+
+.main-content .container {
+    display: flex;
+    gap: 30px;
+}
+
+.left-content {
+    flex: 3;
+}
+
+.right-sidebar {
+    flex: 1;
+}
+
+.testing-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.red-divider {
+    height: 4px;
+    background-color: #e10600;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.red-divider::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 10px 0 0;
+    border-color: #e10600 transparent transparent transparent;
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+}
+
+.sync-calendar {
+    text-align: right;
+    margin-bottom: 20px;
+    font-size: 12px;
+    color: #666;
+}
+
+/* Testing Days */
+.testing-days {
+    margin-bottom: 30px;
+}
+
+.test-day {
+    display: flex;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 15px 0;
+    align-items: center;
+}
+
+.date-box {
+    width: 60px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.date-box .day {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.date-box .month {
+    font-size: 12px;
+    color: #666;
+}
+
+.day-info {
+    flex: 1;
+}
+
+.day-info h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.highlights-text {
+    font-size: 12px;
+    color: #666;
+    display: flex;
+    align-items: center;
+}
+
+.highlights-text::before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: #e10600;
+    margin-right: 5px;
+}
+
+.day-links {
+    display: flex;
+    gap: 10px;
+}
+
+.day-links a {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: #333;
+    padding: 5px 10px;
+    border: 1px solid #e0e0e0;
+}
+
+.day-links a::after {
+    content: ">";
+    margin-left: 5px;
+}
+
+/* Info Text */
+.info-text {
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.info-text p {
+    margin-bottom: 15px;
+}
+
+/* Discover Section */
+.discover-section h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.discover-cards {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.discover-card {
+    position: relative;
+    width: calc(25% - 15px);
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.discover-card img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.discover-card:hover img {
+    transform: scale(1.05);
+}
+
+.card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Right Sidebar */
+.sidebar-box {
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.sidebar-item {
+    padding: 15px;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    align-items: center;
+}
+
+.arrow-icon {
+    color: #e10600;
+    margin-right: 10px;
+}
+
+.circuit-map {
+    position: relative;
+}
+
+.circuit-img {
+    width: 100%;
+    height: auto;
+}
+
+.circuit-name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+}

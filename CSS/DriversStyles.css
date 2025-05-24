@@ -1,0 +1,319 @@
+
+/* Reset và font chung */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Formula1', Arial, sans-serif;
+}
+
+@font-face {
+    font-family: 'Formula1';
+    src: url('https://www.formula1.com/etc/designs/fom-website/fonts/F1Regular/Formula1-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Formula1';
+    src: url('https://www.formula1.com/etc/designs/fom-website/fonts/F1Bold/Formula1-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #e10600;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+/* Hero section */
+.hero2 {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://via.placeholder.com/1920x600');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+    height: 200px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+/* Drivers grid */
+.drivers-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.drivers-title h2 {
+    font-size: 32px;
+    color: #e10600;
+}
+
+.drivers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+/* Cập nhật driver card theo thiết kế mới */
+.driver-card {
+    border-top: 3px double #000;
+    border-right: 3px double #000;
+    border-top-right-radius: 4px;
+    padding: 8px 8px 0 0;
+    border-color: #000;
+    transition: all 0.3s ease;
+    background-color: white;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.driver-card:hover {
+    transform: translateY(-5px);
+    margin-top: -4px;
+    padding-top: 16px;
+    border-color: currentColor;
+}
+
+.driver-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.driver-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #000;
+    padding: 0 12px;
+}
+
+.driver-number {
+    font-weight: 900;
+    font-size: 42px;
+    line-height: 1;
+    letter-spacing: normal;
+    font-style: normal;
+    color: #e10600;
+}
+
+.points-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: flex-end;
+}
+
+.points-value {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+}
+
+.points-label {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: uppercase;
+    display: block;
+    padding: 2px 8px;
+    border-radius: 2px;
+    background-color: #000;
+    color: white;
+}
+
+.driver-divider {
+    margin: 4px 0;
+    border: 0;
+    border-top: 1px solid #e0e0e0;
+}
+
+.driver-name-container {
+    display: flex;
+    position: relative;
+    align-items: center;
+    border-left: 1px solid currentColor;
+    padding-left: 8px;
+    margin: 0 12px;
+}
+
+.name-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    color: #000;
+}
+
+.driver-first-name {
+    font-size: 12px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: normal;
+}
+
+.driver-last-name {
+    font-size: 18px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: normal;
+    color: #e10600;
+}
+
+.country-flag {
+    height: 2em;
+    margin-left: auto;
+    border: 1px solid #b3b3b3;
+    border-radius: 2px;
+}
+
+.team-name {
+    font-size: 12px;
+    line-height: 1.2;
+    text-transform: none;
+    font-weight: normal;
+    font-style: normal;
+    color: #b3b3b3;
+    padding: 0 12px;
+}
+
+.driver-footer {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 10px;
+}
+
+.number-logo {
+    width: 96px;
+    height: 96px;
+    object-fit: contain;
+}
+
+.driver-photo {
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: 16px;
+    max-width: 75%;
+    height: auto;
+}
+
+/* Footer */
+footer {
+    background-color: #1e1e1e;
+    color: white;
+    padding: 40px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    width: 23%;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #e10600;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section li {
+    margin-bottom: 8px;
+}
+
+.footer-section a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-section a:hover {
+    color: white;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #999;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+    }
+    
+    .main-nav ul {
+        margin-top: 15px;
+    }
+    
+    .main-nav li {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    
+    .hero h1 {
+        font-size: 36px;
+    }
+    
+    .footer-section {
+        width: 48%;
+    }
+}
+
+@media (max-width: 480px) {
+    .drivers-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-section {
+        width: 100%;
+    }
+}
+ 

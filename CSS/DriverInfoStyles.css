@@ -1,0 +1,307 @@
+
+/* Root variables */
+
+:root {
+  --primary-color: #e10600;
+  --secondary-color: #15151e;
+  --tertiary-color: #38383f;
+  --mclaren-color: #ff8000;
+  --white: #ffffff;
+  --light-gray: #f5f5f5;
+  --gray: #949498;
+  --dark-gray: #38383f;
+  --black: #000000;
+}
+/* Global styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Titillium Web", Arial, sans-serif;
+}
+
+body {
+  background-color: var(--light-gray);
+  color: var(--secondary-color);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+/* Header styles */
+
+/* Hero section */
+.hero2 {
+  padding-top: 70px;
+  background: white;
+  /* Nền trắng */
+  color: black;
+  /* Chữ đen */
+  position: relative;
+  overflow: hidden;
+  min-height: 400px;
+}
+
+.hero2::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50%;
+  /* Chiếm 50% bên phải */
+  height: 100%;
+  background: url("https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/drivers/2025Drivers/piastri")
+    center / contain no-repeat;
+  /* Căn giữa ảnh trong phần 50% bên phải */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero2-container {
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+
+.hero2-content {
+  padding: 40px 0;
+  width: 50%;
+  position: relative;
+  z-index: 2;
+}
+
+.driver-number {
+  font-size: 120px;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 10px;
+  color: Black;
+}
+
+.driver-name {
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.driver-team {
+  display: inline-block;
+  padding: 16px 32px;
+  background: url("https://media.formula1.com/image/upload/f_auto/q_auto/v1677244974/content/dam/fom-website/2018-redesign-assets/Flags%2016x9/australia-flag.png");
+  background-size: cover;
+  color: var(--white);
+  font-weight: 600;
+  font-size: 18px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.hero-image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 550px;
+  z-index: 1;
+}
+/* Stats section */
+
+.stats {
+  background-color: var(--white);
+  padding: 60px 0;
+}
+
+.stats-title {
+  font-size: 32px;
+  margin-bottom: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.stat-card {
+  padding: 20px;
+  background-color: var(--light-gray);
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.stat-label {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: var(--gray);
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.stat-value {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--secondary-color);
+}
+/* Biography section */
+
+.biography {
+  padding: 60px 0;
+  background-color: var(--light-gray);
+}
+
+.bio-title {
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.bio-content {
+  max-width: 800px;
+  line-height: 1.8;
+}
+
+.bio-content p {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+/* News section */
+
+.news2 {
+  padding: 60px 0;
+  background-color: var(--white);
+}
+
+.news2-title {
+  font-size: 32px;
+  margin-bottom: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.news2-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+.news2-card {
+  background-color: var(--light-gray);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.news2-card:hover {
+  transform: translateY(-10px);
+}
+
+.news2-image {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.news2-content {
+  padding: 20px;
+}
+
+.news2-date {
+  font-size: 14px;
+  color: var(--gray);
+  margin-bottom: 10px;
+}
+
+.news2-headline {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: var(--secondary-color);
+}
+
+.news2-excerpt {
+  font-size: 14px;
+  color: var(--dark-gray);
+  margin-bottom: 15px;
+}
+
+.news2-image-1 {
+  background-image: url("/api/placeholder/400/200");
+}
+
+.news2-image-2 {
+  background-image: url("/api/placeholder/400/200");
+}
+
+.news2-image-3 {
+  background-image: url("/api/placeholder/400/200");
+}
+
+.read-more {
+  display: inline-block;
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.read-more:after {
+  content: "→";
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.3s ease;
+}
+
+.read-more:hover:after {
+  transform: translate(5px, -50%);
+}
+
+
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+  }
+  .hero-content {
+    width: 100%;
+    padding: 40px 0 250px;
+  }
+  .hero-image {
+    height: 400px;
+    right: 50%;
+    transform: translateX(50%);
+  }
+  .driver-number {
+    font-size: 80px;
+  }
+  .driver-name {
+    font-size: 36px;
+  }
+  nav ul {
+    display: none;
+  }
+  .stats-grid,
+  .news-grid {
+    grid-template-columns: 1fr;
+  }
+}
+ 
