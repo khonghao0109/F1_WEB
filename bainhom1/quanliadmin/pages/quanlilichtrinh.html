@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quản lý lịch trình giải đấu</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/quanlilichtrinh.css">
+  <script src="../js/auth.js" defer></script>
+</head>
+<body>
+
+<!-- Top bar -->
+<div class="top-bar">
+  <div class="logo-container">
+    <img src="../images/fia-logo.png" alt="FIA Logo" class="logo">
+    <div style="display: flex; gap: 20px; margin-left: 20px;">
+      <span style="font-weight: bold;">F1®</span>
+      <span>F2™</span>
+      <span>F3™</span>
+      <span>F1® ACADEMY</span>
+    </div>
+  </div>
+  <div class="top-nav" id="authArea">
+    <button class="login-btn" id="loginBtn">ĐĂNG NHẬP</button>
+  </div>
+</div>
+
+<!-- Main nav -->
+<div class="main-nav">
+  <div class="main-nav-container">
+    <img src="../images/f1-logo.png" alt="F1 Logo" class="f1-logo">
+    <div class="main-menu">
+      <a href="index.html" class="main-menu-item">Bảng điều khiển</a>
+      <a href="quanlitintuc.html" class="main-menu-item">Quản lý tin tức</a>
+      <div class="main-menu-item has-dropdown">
+        <span>Quản lý giải đấu</span>
+        <div class="dropdown-content">
+          <a href="quanlilichtrinh.html" class="dropdown-link">Lịch trình giải đấu</a>
+          <a href="quanlikqthongke.html" class="dropdown-link">Kết quả & Thống kê</a>
+          <a href="quanlikhancave.html" class="dropdown-link">Khán giả & Vé</a>
+        </div>
+      </div>      
+      <a href="quanlitaydua.html" class="main-menu-item">Quản lý tay đua</a>
+      <a href="quanlidoi.html" class="main-menu-item">Quản lý đội đua</a>
+    </div>
+  </div>
+</div>
+
+<!-- Content -->
+<div class="content">
+
+  <!-- Tiêu đề -->
+    <div class="page-title">
+        <h1>Quản lý lịch trình giải đấu</h1>
+    </div>
+
+  <!-- Bảng điều khiển mùa giải -->
+  <div class="section">
+    <h3>Bảng điều khiển mùa giải</h3>
+
+    <form class="form-grid">
+      <label>Tên mùa giải:</label>
+      <input type="text" placeholder="Nhập tên mùa giải">
+
+      <label>Ngày bắt đầu:</label>
+      <input type="date">
+
+      <label>Ngày giữa mùa:</label>
+      <input type="date">
+
+      <label>Ngày kết thúc:</label>
+      <input type="date">
+
+      <button type="submit" class="action-btn">Lưu lịch trình</button>
+    </form>
+  </div>
+
+  <!-- Quản lý từng chặng đua -->
+  <div class="section">
+    <h3>Quản lý từng chặng đua</h3>
+    <form class="form-grid">
+      <label>Tên chặng đua:</label>
+      <input type="text" placeholder="Nhập tên chặng đua">
+
+      <label>Địa điểm:</label>
+      <input type="text" placeholder="Nhập địa điểm">
+
+      <label>Ngày thi đấu:</label>
+      <input type="date">
+
+      <label>Loại sự kiện:</label>
+      <select>
+        <option>FP1</option>
+        <option>FP2</option>
+        <option>FP3</option>
+        <option>Phân hạng</option>
+        <option>Sprint</option>
+        <option>Chính thức</option>
+      </select>
+
+      <label>Trạng thái:</label>
+      <select>
+        <option>Sắp diễn ra</option>
+        <option>Đã hoàn thành</option>
+        <option>Hoãn</option>
+        <option>Hủy</option>
+      </select>
+
+      <button type="submit" class="action-btn">Thêm chặng đua</button>
+    </form>
+  </div>
+
+  <!-- Hệ thống bản đồ đường đua -->
+  <div class="section">
+    <h3>Hệ thống bản đồ đường đua</h3>
+    <form class="form-grid">
+      <label>Tải sơ đồ đường đua:</label>
+      <input type="file">
+
+      <label>Ghi chú chiến lược lốp:</label>
+      <textarea rows="4" placeholder="Nhập thông tin lốp và chiến lược pit stop"></textarea>
+
+      <button type="submit" class="action-btn">Cập nhật bản đồ</button>
+    </form>
+  </div>
+
+</div>
+
+</body>
+</html>

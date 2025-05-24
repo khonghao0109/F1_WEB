@@ -1,0 +1,117 @@
+/* ====== QUẢN LÝ GIẢI ĐẤU - MENU DROPDOWN ====== */
+
+.has-dropdown {
+    position: relative;
+  }
+  
+  .has-dropdown > span {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 0;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .has-dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    min-width: 220px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1000;
+  }
+  
+  .dropdown-content a {
+    display: block;
+    padding: 12px 15px;
+    text-decoration: none;
+    color: #e10600;
+    font-weight: bold;
+    background-color: white;
+    transition: background 0.3s;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Để dropdown đúng vị trí */
+  .main-menu {
+    position: relative;
+  }
+  
+  /* ====== GIAO DIỆN CHI TIẾT SAU KHI CHỌN ====== */
+  
+  .sub-header {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e10600;
+  }
+  
+  .sub-header h2 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .sub-actions {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .action-btn {
+    background-color: #e10600;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .action-btn:hover {
+    background-color: #c50000;
+  }
+  
+  .sub-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .sub-table th, .sub-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .sub-table th {
+    background-color: #f7f7f7;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .sub-table tr:hover {
+    background-color: #f0f0f0;
+  }
+  
+  @media (max-width: 768px) {
+    .sub-actions {
+      flex-direction: column;
+    }
+    .action-btn {
+      width: 100%;
+    }
+  }
+  

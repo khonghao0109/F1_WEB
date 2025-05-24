@@ -1,0 +1,150 @@
+/* ======= Style chung ======= */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.content {
+  padding: 20px;
+}
+
+.page-title h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* ======= Form nhập vé ======= */
+.section {
+  margin-bottom: 50px;
+}
+
+.section h3 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #e10600;
+  margin-bottom: 20px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-grid label {
+  font-weight: bold;
+}
+
+.form-grid input,
+.form-grid select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+.action-btn {
+  background-color: #e10600;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.action-btn:hover {
+  background-color: #c50000;
+}
+
+/* ======= Bố cục Bảng và Biểu đồ ======= */
+.report-cards {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.report-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  flex: 1;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Card bảng */
+.report-table {
+  flex: 2;
+}
+
+.report-table h3 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #e10600;
+  margin-bottom: 20px;
+}
+
+/* Card biểu đồ */
+.report-chart {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Tiêu đề biểu đồ */
+.report-chart h3 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #e10600;
+  margin-top: 40px;    /* cách bảng bên trên */
+  margin-bottom: 30px; /* cách biểu đồ bên dưới */
+  text-align: center;
+}
+
+/* Bọc biểu đồ */
+.chart-wrapper {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+#piechart {
+  width: 100%;
+  height: 250px;
+}
+
+/* ======= Bảng doanh thu ======= */
+.sub-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.sub-table th,
+.sub-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.sub-table th {
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+/* Hover bảng */
+.sub-table tr:hover {
+  background-color: #f0f0f0;
+}
+
+/* ======= Responsive Mobile ======= */
+@media (max-width: 768px) {
+  .report-cards {
+    flex-direction: column;
+  }
+}
